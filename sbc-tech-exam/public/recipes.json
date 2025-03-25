@@ -1,0 +1,32 @@
+[
+    {
+      "id": "1",
+      "name": "Johnny",
+      "email": "johnny@example.com",
+      "title": "Spicy Chicken Curry",
+      "instructions": "Cook chicken with spices and simmer for 30 minutes.",
+      "image": "chicken_curry.jpg",
+      "dateAdded": "2024-03-25",
+      "isFavorite": true
+    },
+    {
+      "id": "2",
+      "name": "Joy",
+      "email": "joy@example.com",
+      "title": "Veggie Pasta",
+      "instructions": "Boil pasta and stir-fry with vegetables and sauce.",
+      "image": "veggie_pasta.jpg",
+      "dateAdded": "2024-03-25",
+      "isFavorite": false
+    },
+    {
+      "id": "3",
+      "name": "Mark",
+      "email": "mark@example.com",
+      "title": "Avocado Toast",
+      "instructions": "Toast bread and top with mashed avocado and seasoning.",
+      "image": "avocado_toast.jpg",
+      "dateAdded": "2024-03-25",
+      "isFavorite": true
+    }
+  ]
