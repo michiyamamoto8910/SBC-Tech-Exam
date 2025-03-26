@@ -5,6 +5,7 @@ interface Recipe {
     name: string;
     email: string;
     title: string;
+    description: string;
     instructions: string;
     image: string;
     dateAdded: string;
@@ -26,7 +27,6 @@ const initialState: RecipesState = {
 export const fetchRecipes = createAsyncThunk('recipes/fetch', async () => {
     const res = await fetch('/recipes.json');
     const data = await res.json();
-    console.log('RES', data)
     return data
 })
 
@@ -41,6 +41,19 @@ const recipesSlice = createSlice({
                 recipe.isFavorite = !recipe.isFavorite;
             }
         },
+        addRecipe: (state, action: PayloadAction<Recipe>) => {
+            console.log('action.payload', action.payload)
+            state.list.unshift(action.payload);
+          },
+          updateRecipe: (state, action: PayloadAction<Recipe>) => {
+            const index = state.list.findIndex((r) => r.id === action.payload.id);
+            if (index !== -1) {
+              state.list[index] = action.payload;
+            }
+          },
+          deleteRecipe: (state, action: PayloadAction<string>) => {
+            state.list = state.list.filter((r) => r.id !== action.payload);
+          },
     },
     //for create asyncthunk
     extraReducers: (builder) => {
@@ -49,7 +62,6 @@ const recipesSlice = createSlice({
                 state.loading = true;
             })
             .addCase(fetchRecipes.fulfilled, (state, action: PayloadAction<Recipe[]>) => {
-                console.log('PAYLOAD', action.payload)
                 state.list = action.payload;
                 state.loading = false;
             })
@@ -60,5 +72,5 @@ const recipesSlice = createSlice({
     }
 })
 
-export const { toggleFavorite } = recipesSlice.actions;
+export const { toggleFavorite, addRecipe, updateRecipe, deleteRecipe   } = recipesSlice.actions;
 export default recipesSlice.reducer;

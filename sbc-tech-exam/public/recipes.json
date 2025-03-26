@@ -1,32 +1,35 @@
 [
-    {
-      "id": "1",
-      "name": "Johnny",
-      "email": "johnny@example.com",
-      "title": "Spicy Chicken Curry",
-      "instructions": "Cook chicken with spices and simmer for 30 minutes.",
-      "image": "chicken_curry.jpg",
-      "dateAdded": "2024-03-25",
-      "isFavorite": true
-    },
-    {
-      "id": "2",
-      "name": "Joy",
-      "email": "joy@example.com",
-      "title": "Veggie Pasta",
-      "instructions": "Boil pasta and stir-fry with vegetables and sauce.",
-      "image": "veggie_pasta.jpg",
-      "dateAdded": "2024-03-25",
-      "isFavorite": false
-    },
-    {
-      "id": "3",
-      "name": "Mark",
-      "email": "mark@example.com",
-      "title": "Avocado Toast",
-      "instructions": "Toast bread and top with mashed avocado and seasoning.",
-      "image": "avocado_toast.jpg",
-      "dateAdded": "2024-03-25",
-      "isFavorite": true
-    }
-  ]
+  {
+    "id": "1",
+    "name": "Johnny",
+    "email": "johnny@example.com",
+    "title": "Spicy Chicken Curry",
+    "description": "A flavorful and fiery chicken curry made with a blend of aromatic spices, perfect for spice lovers.",
+    "instructions": "Cook chicken with spices and simmer for 30 minutes.",
+    "image": "chicken_curry.jpg",
+    "dateAdded": "2024-03-25",
+    "isFavorite": true
+  },
+  {
+    "id": "2",
+    "name": "Joy",
+    "email": "joy@example.com",
+    "title": "Veggie Pasta",
+    "description": "A healthy and colorful pasta dish loaded with fresh vegetables and tossed in a savory sauce.",
+    "instructions": "Boil pasta and stir-fry with vegetables and sauce.",
+    "image": "veggie_pasta.jpg",
+    "dateAdded": "2024-03-25",
+    "isFavorite": false
+  },
+  {
+    "id": "3",
+    "name": "Mark",
+    "email": "mark@example.com",
+    "title": "Avocado Toast",
+    "description": "A simple and nutritious breakfast option featuring crispy toast topped with creamy avocado and spices.",
+    "instructions": "Toast bread and top with mashed avocado and seasoning.",
+    "image": "avocado_toast.jpg",
+    "dateAdded": "2024-03-25",
+    "isFavorite": true
+  }
+]
